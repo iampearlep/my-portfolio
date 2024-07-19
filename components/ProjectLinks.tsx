@@ -6,7 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 export const ProjectLinks = () => {
   return (
     <section id="#projects" className="">
-      <motion.div initial={{ opacity: 0, scale:0.65 }} animate={{ opacity:1, scale:1}} transition={{ ease: "easeInOut",delay: 2.0, duration: 0.5}} className="mx-auto w-full">
+      <motion.div initial={{ opacity: 0, scale:0.65 }} animate={{ opacity:1, scale:1}} transition={{ ease: "easeInOut",delay: 2.2, duration: 0.5}} className="mx-auto w-full">
         <Link
           heading="Luxe"
           subheading="NEXTJS, TS, TAILWIND, SANITY, SUPABASE"
@@ -57,6 +57,7 @@ const Link = ({ heading, imgSrc, subheading, about, href }: { heading: string, i
     <motion.a
       href={href}
       ref={ref}
+      target="blank"
       initial="initial"
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b-2 hover:border-neutral-700 py-3 transition-colors duration-500 border-neutral-50 md:py-5"
