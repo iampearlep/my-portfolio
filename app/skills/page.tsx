@@ -61,8 +61,8 @@ export default function Skills() {
     ]
 
     const animation = {
-        initial: {opacity: 0, scale:0},
-        enter:  (i: number) => ({opacity:1, scale:1, transition: {duration: 0.5, ease: easeInOut,  delay: 0.3 * i}})
+        initial: {opacity: 0, scale:0.5},
+        enter:  (i: number) => ({opacity:1, scale:1, transition: {duration: 0.5, ease: easeInOut,  delay: 0.5 * i}})
       }
 
   return (
