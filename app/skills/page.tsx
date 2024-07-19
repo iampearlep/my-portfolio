@@ -61,13 +61,13 @@ export default function Skills() {
     ]
 
     const animation = {
-        initial: {opacity: 0, scale:0.5},
+        initial: {opacity: 0, scale:0.3},
         enter:  (i: number) => ({opacity:1, scale:1, transition: {duration: 0.5, ease: easeInOut,  delay: 0.3 * i}})
       }
 
   return (
     <main className="md:h-[100vh] w-full flex flex-col gap-y-5 md:gap-y-24 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0">
-    <motion.h2 initial={{ y:100, opacity: 0, scale:0.5 }} animate={{ y:0, opacity:1, scale:1}} transition={{ ease: "easeInOut", duration: 0.5}}  className="text-4xl font-semibold">My skills</motion.h2>
+    <motion.h2 initial={{ y:100, opacity: 0, scale:0.5 }} animate={{ y:0, opacity:1, scale:1}} transition={{ ease: "easeInOut", duration: 0.2}}  className="text-4xl font-semibold">My skills</motion.h2>
 
     <div className="flex flex-row flex-wrap justify-center gap-x-5 md:gap-x-0 md:grid md:grid-cols-4 place-items-center items-center w-10/12 mx-auto gap-y-6">
         {skills.map((skill, index) => {
