@@ -15,7 +15,7 @@ export const AboutHero = () => {
     <div >
        <div>
          <motion.h1 initial={{ y:100, opacity: 0, scale:0.5 }} animate={{ y:0, opacity:1, scale:1}} transition={{ ease: "easeInOut", duration: 0.5}} className="capitalize font-medium text-4xl">Hello</motion.h1>
-         <motion.p initial={{ y:100, opacity: 0, scale:0.5 }} animate={{ y:0, opacity:1, scale:1}} transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5}}  className="text-base py-4">I&#39;m Princess, <span className='font-light text-neutral-500'>a self-motivated</span> frontend developer <span className='font-light text-neutral-500'>with a passion for building beautiful, brilliant and functional user interfaces</span> using frontend technologies.</motion.p>
+         <motion.p initial={{ y:100, opacity: 0, scale:0.5 }} animate={{ y:0, opacity:1, scale:1}} transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5}}  className="text-base py-4">I&#39;m Princess, <span className='font-light text-neutral-500'>a self-motivated</span> frontend developer <span className='font-light text-neutral-500'>with a passion for building beautiful, brilliant, and functional user interfaces</span> using frontend technologies.</motion.p>
          </div>
          {/* Other pages links */}
          <div className="flex flex-col py-10 gap-y-6">
