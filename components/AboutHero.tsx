@@ -21,7 +21,7 @@ export const AboutHero = () => {
          <div className="flex flex-col py-10 gap-y-6">
           <motion.div initial={{ x: -100,  opacity: 0, scale:0.5 }} animate={{ x:0,  opacity:1, scale:1}} transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5}} className="flex flex-row justify-center items-center gap-x-5 w-4/12 hover:text-neutral-500 transition-all">
             <hr className="text-neutral-50 hover:text-neutral-500 w-7/12" />
-            <Link href="#projects" className="text-sm">Projects</Link>
+            <Link href="/projects" className="text-sm">Projects</Link>
           </motion.div>
           <motion.div initial={{ x: -100,  opacity: 0, scale:0.5 }} animate={{ x:0,  opacity:1, scale:1}} transition={{ ease: "easeInOut", delay: 1.0, duration: 0.5}} className="flex flex-row justify-center items-center hover:text-neutral-500 gap-x-5 w-4/12 transition-all">
             <hr className="text-neutral-50 hover:text-neutral-500 w-7/12"  />

@@ -1,135 +1,42 @@
 "use client"
-import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
-import { FiArrowRight } from "react-icons/fi";
+
+import {  motion, } from "framer-motion";
+import { Link } from "./Link";
 
 export const ProjectLinks = () => {
   return (
-    <section id="#projects" className="">
+    <section className="">
       <motion.div initial={{ opacity: 0, scale:0.65 }} animate={{ opacity:1, scale:1}} transition={{ ease: "easeInOut",delay: 2.2, duration: 0.5}} className="mx-auto w-full">
         <Link
           heading="Luxe"
           subheading="NEXTJS, TS, TAILWIND, SANITY, SUPABASE"
-          about= "E-commerce fashion website"
+          about= "An E-commerce fashion website"
           imgSrc="/images/img1.png"
           href="https://luxe-vtg.vercel.app/"
         />
         <Link
           heading="Utopie"
           subheading="NEXTJS, TS, TAILWIND, FRAMER"
-          about= "Landing page for Fintech"
+          about= "A Landing page"
           imgSrc="/images/img2.png"
           href="https://utopiepay.com/"
         />
         <Link
           heading="Explore"
           subheading="NEXTJS, TS, TAILWIND, SANITY"
-          about= "Blog website"
+          about= "A Blog website"
           imgSrc="/images/img3.png"
           href="https://blog-site-pink.vercel.app/"
         />
         <Link
           heading="Showflix"
           subheading="NEXTJS, TS, TAILWIND, TMDB API"
-          about= "Movies Website"
+          about= "A Movies Website"
           imgSrc="/images/img4.png"
           href="https://showflix-phi.vercel.app/"
         />
         
       </motion.div>
     </section>
-  );
-};
-
-const Link = ({ heading, imgSrc, subheading, about, href }: { heading: string, imgSrc: any, subheading: string, about: string, href: string }) => {
-  const ref = useRef(null);
-
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const mouseXSpring = useSpring(x);
-  const mouseYSpring = useSpring(y);
-
-  const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
-  const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
-
-  return (
-    <motion.a
-      href={href}
-      ref={ref}
-      target="blank"
-      initial="initial"
-      whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 hover:border-neutral-700 py-3 transition-colors duration-500 border-neutral-50 md:py-5"
-    >
-      <div>
-        <motion.span
-          variants={{
-            initial: { x: 0 },
-            whileHover: { x: -16 },
-          }}
-          transition={{
-            type: "spring",
-            staggerChildren: 0.075,
-            delayChildren: 0.25,
-          }}
-          className="relative z-10 block text-2xl font-bold group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50 md:text-3xl"
-        >
-          {heading.split("").map((l, i) => (
-            <motion.span
-              variants={{
-                initial: { x: 0 },
-                whileHover: { x: 16 },
-              }}
-              transition={{ type: "spring" }}
-              className="inline-block"
-              key={i}
-            >
-              {l}
-            </motion.span>
-          ))}
-        </motion.span>
-        <span className="relative z-10 mt-1 block text-[0.65rem] group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50">
-          {subheading}
-        </span>
-        <span className="relative z-10 mt-1 block text-[0.55rem] group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50">
-          {about}
-        </span>
-      </div>
-
-      <motion.img
-        style={{
-          top,
-          left,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-        variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
-        }}
-        transition={{ type: "spring" }}
-        src={imgSrc}
-        className="absolute z-0 h-20 w-32 rounded-lg object-cover md:h-40 md:w-64"
-        alt={`Image representing a link for ${heading}`}
-      />
-
-      <motion.div
-        variants={{
-          initial: {
-            x: "25%",
-            opacity: 0,
-          },
-          whileHover: {
-            x: "0%",
-            opacity: 1,
-          },
-        }}
-        transition={{ type: "spring" }}
-        className="relative z-10 p-2"
-      >
-        <FiArrowRight className="text-2xl text-neutral-50" />
-      </motion.div>
-    </motion.a>
   );
 };
