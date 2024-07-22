@@ -52,13 +52,6 @@ export default function Projects() {
           imgSrc="/images/img6.png"
           href="https://hawk-ugc.vercel.app/"
         />
-        <Link
-          heading="SINC"
-          subheading="NEXTJS, TS, TAILWIND, FRAMER"
-          about= "A Landing page"
-          imgSrc="/images/img7.png"
-          href="https://sinc-landing-page.vercel.app/"
-        />
       </motion.div> 
       <div>
     <a href="/" className="flex flex-row justify-center items-center gap-x-1"> <IoIosArrowRoundBack />Go back </a>

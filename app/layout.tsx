@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
-import Template from "./template";
+import "./globals.css"
 const inter = Montserrat({ subsets: ["latin"] , weight: '400' });
 
 export const metadata: Metadata = {
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-[#0d0d0d] ${inter.className}`}>
-        <Template>{children}</Template>
+      {children}
         </body>
     </html>
   );

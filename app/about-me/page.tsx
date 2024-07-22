@@ -1,9 +1,16 @@
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 export default function AboutMe() {
   return (
-    <main className="md:h-[100vh] w-full flex flex-col  gap-y-7 md:gap-y-20 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.5 }}
+      className="md:h-[100vh] w-full flex flex-col  gap-y-7 md:gap-y-20 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0"
+    >
       <h2 className="text-4xl font-semibold">About me</h2>
 
       <div className="flex flex-col text-center justify-center items-center w-11/12 md:w-7/12 text-[0.92rem] leading-loose md:text-base md:leading-loose">
@@ -51,8 +58,11 @@ export default function AboutMe() {
           <span className="font-light text-neutral-500">
             Witnessing my code come to life
           </span>{" "}
-          as a user-friendly website is <span className="font-light text-neutral-500">incredibly rewarding</span>. When I&#39;m not
-          coding,{" "}
+          as a user-friendly website is{" "}
+          <span className="font-light text-neutral-500">
+            incredibly rewarding
+          </span>
+          . When I&#39;m not coding,{" "}
           <span className="font-light text-neutral-500">
             {" "}
             you&#39;ll likely find me
@@ -76,6 +86,6 @@ export default function AboutMe() {
           Go back{" "}
         </Link>
       </div>
-    </main>
+    </motion.main>
   );
 }
