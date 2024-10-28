@@ -1,7 +1,27 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+
+import localFont from "next/font/local";
 import "./globals.css"
-const inter = Montserrat({ subsets: ["latin"] , weight: '400' });
+import { Navbar } from "@/components/Navbar";
+const cabinetGrotesk = localFont({
+  src: [
+    {
+      path: './fonts/CabinetGrotesk-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/CabinetGrotesk-Medium.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/CabinetGrotesk-Bold.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Princess",
@@ -15,7 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-[#0d0d0d] ${inter.className}`}>
+      <body className={`bg-[#0d0d0d] ${cabinetGrotesk.className}`}>
+      <Navbar />
       {children}
         </body>
     </html>

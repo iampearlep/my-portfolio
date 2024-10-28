@@ -60,10 +60,7 @@ export default function Skills() {
         },
     ]
 
-    const animation = {
-        initial: {opacity: 0, scale:0},
-        enter:  (i: number) => ({opacity:1, scale:1, transition: {duration: 0.3, type: "spring",  delay: 0.1 * i}})
-      }
+   
 
   return (
     <main className="md:h-[100vh] w-full flex flex-col gap-y-5 md:gap-y-24 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0">
@@ -71,7 +68,7 @@ export default function Skills() {
 
     <div className="flex flex-row flex-wrap justify-center gap-x-5 md:gap-x-0 md:grid md:grid-cols-4 place-items-center items-center w-10/12 mx-auto gap-y-6">
         {skills.map((skill, index) => {
-            return <motion.p custom={index} variants={animation} initial="initial" animate= "enter"   key={index} className="border flex flex-row justify-center items-center gap-x-2 border-neutral-100 px-4 py-2 hover:bg-white hover:text-black transition-all cursor-pointer">{skill.icon} {skill.name}</motion.p>
+            return <motion.p key={index} className="border flex flex-row justify-center items-center gap-x-2 border-neutral-100 px-4 py-2 hover:bg-white hover:text-black transition-all cursor-pointer">{skill.icon} {skill.name}</motion.p>
         })}
     </div>
     <div>
