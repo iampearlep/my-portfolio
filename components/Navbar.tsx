@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import { Time } from './Time'
 
 export const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ export const Navbar = () => {
             </Link>
             </div>
             <div className='flex flex-row gap-x-1 justify-center items-center md:w-3/12'>
-                <p>15:45</p>
+                <Time />
                 <hr className="text-purple-200 hover:text-neutral-500 w-3"  />
                 <p>Lagos, NG</p>
             </div>
