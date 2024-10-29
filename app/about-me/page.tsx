@@ -54,7 +54,7 @@ export default function AboutMe() {
       <div>
         <Link
           href="/"
-          className="flex flex-row justify-center items-center gap-x-1"
+          className="flex flex-row justify-center items-center gap-x-1 hover:text-purple-300"
         >
           {" "}
           <IoIosArrowRoundBack />
