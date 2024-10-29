@@ -22,7 +22,7 @@ export const Link = ({ heading, imgSrc, subheading, about, href }: { heading: st
         target="blank"
         initial="initial"
         whileHover="whileHover"
-        className="group relative flex items-center justify-between border-b-2 hover:border-neutral-700 py-3 transition-colors duration-500 border-neutral-50 md:py-5"
+        className="group relative flex items-center justify-between border-b-2 hover:border-purple-300 py-3 transition-colors duration-500 border-neutral-50 md:py-5"
       >
         <div>
           <motion.span
@@ -35,7 +35,7 @@ export const Link = ({ heading, imgSrc, subheading, about, href }: { heading: st
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-2xl font-bold group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50 md:text-3xl"
+            className="relative z-10 block text-2xl font-bold group-hover:text-purple-300 transition-colors duration-500 text-neutral-50 md:text-3xl"
           >
             {heading.split("").map((l, i) => (
               <motion.span
@@ -51,10 +51,10 @@ export const Link = ({ heading, imgSrc, subheading, about, href }: { heading: st
               </motion.span>
             ))}
           </motion.span>
-          <span className="relative z-10 mt-1 block text-[0.65rem] group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50">
+          <span className="relative z-10 mt-1 block text-[0.65rem] group-hover:text-purple-300 transition-colors duration-500 text-neutral-50">
             {subheading}
           </span>
-          <span className="relative z-10 mt-1 block text-[0.55rem] group-hover:text-neutral-500 transition-colors duration-500 text-neutral-50">
+          <span className="relative z-10 mt-1 block text-[0.55rem] group-hover:text-purple-300 transition-colors duration-500 text-neutral-50">
             {about}
           </span>
         </div>

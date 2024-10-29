@@ -63,16 +63,16 @@ export default function Skills() {
    
 
   return (
-    <main className="md:h-[100vh] w-full flex flex-col gap-y-5 md:gap-y-24 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0">
+    <main className="md:h-[100vh] w-full flex flex-col gap-y-10 md:gap-y-24 justify-center items-center text-neutral-50 mx-auto py-10 md:py-0">
     <h2 className="text-4xl font-semibold">My skills</h2>
 
     <div className="flex flex-row flex-wrap justify-center gap-x-5 md:gap-x-0 md:grid md:grid-cols-4 place-items-center items-center w-10/12 mx-auto gap-y-6">
         {skills.map((skill, index) => {
-            return <motion.p key={index} className="border flex flex-row justify-center items-center gap-x-2 border-neutral-100 px-4 py-2 hover:bg-white hover:text-black transition-all cursor-pointer">{skill.icon} {skill.name}</motion.p>
+            return <motion.p key={index} className="border flex flex-row justify-center items-center gap-x-2 border-neutral-100 px-4 py-2 hover:bg-white hover:text-purple-300 transition-all cursor-pointer">{skill.icon} {skill.name}</motion.p>
         })}
     </div>
     <div>
-    <Link href="/" className="flex flex-row justify-center items-center gap-x-1"> <IoIosArrowRoundBack />Go back </Link>
+    <Link href="/" className="flex flex-row justify-center items-center gap-x-1 hover:text-purple-300"> <IoIosArrowRoundBack />Go back </Link>
    </div> 
     </main>
   );

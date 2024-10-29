@@ -2,12 +2,12 @@
 import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import Avatar from "@/public/images/avatar.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 import { MdAlternateEmail } from "react-icons/md";
 
 export const AboutHero = () => {
+  const Avatar = `https://res.cloudinary.com/diukx5wx0/image/upload/v1730215165/IMG_9704_xxmyu5.jpg`;
   return (
     <div>
       <div>
@@ -15,7 +15,7 @@ export const AboutHero = () => {
           initial={{ y: 100, opacity: 0, scale: 0.5 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ type: "spring", duration: 0.5 }}
-          className="capitalize font-medium text-4xl"
+          className="capitalize font-medium text-4xl text-purple-300"
         >
           Hello,
         </motion.h1>
@@ -26,13 +26,16 @@ export const AboutHero = () => {
           className="text-base py-4"
         >
           I&#39;m Princess, a
-          <span className="font-light text-red-300"> self-motivated</span>{" "}
+          <span className="font-light text-purple-300"> self-motivated</span>{" "}
           frontend developer with a{" "}
-          <span className="font-light text-red-300">passion</span> for building{" "}
-          <span className="font-light text-red-300">beautiful</span>,
-          <span className="font-light text-red-300"> brilliant</span>, and{" "}
+          <span className="font-light text-purple-300">passion</span> for
+          building <span className="font-light text-purple-300">beautiful</span>
+          ,<span className="font-light text-purple-300"> brilliant</span>, and{" "}
           functional
-          <span className="font-light text-red-300"> user interfaces</span>{" "}
+          <span className="font-light text-purple-300">
+            {" "}
+            user interfaces
+          </span>{" "}
           using frontend technologies.
         </motion.p>
       </div>
@@ -42,9 +45,9 @@ export const AboutHero = () => {
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ ease: easeInOut, delay: 0.8, duration: 0.5 }}
-          className="flex flex-row justify-center items-center gap-x-5 w-4/12 hover:text-red-300 transition-all"
+          className="flex flex-row justify-center items-center gap-x-5 w-4/12 hover:text-purple-300 transition-all"
         >
-          <hr className="text-neutral-50 hover:text-red-300 w-7/12" />
+          <hr className="text-neutral-50 hover:text-purple-300 w-7/12" />
           <Link href="/projects" className="text-sm">
             Projects
           </Link>
@@ -53,9 +56,9 @@ export const AboutHero = () => {
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ ease: easeInOut, delay: 1.0, duration: 0.5 }}
-          className="flex flex-row justify-center items-center hover:text-red-300 gap-x-5 w-4/12 transition-all"
+          className="flex flex-row justify-center items-center hover:text-purple-300 gap-x-5 w-4/12 transition-all"
         >
-          <hr className="text-neutral-50 hover:text-red-300 w-7/12" />
+          <hr className="text-neutral-50 hover:text-purple-300 w-7/12" />
           <Link href="/skills" className="text-sm">
             Skills
           </Link>
@@ -64,9 +67,9 @@ export const AboutHero = () => {
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ ease: easeInOut, delay: 1.2, duration: 0.5 }}
-          className="flex flex-row justify-center items-center gap-x-5 w-8/12 md:w-7/12 hover:text-red-300 transition-all"
+          className="flex flex-row justify-center items-center gap-x-5 w-8/12 md:w-7/12 hover:text-purple-300 transition-all"
         >
-          <hr className="text-neutral-50 hover:text-red-300 w-5/12" />
+          <hr className="text-neutral-50 hover:text-purple-300 w-5/12" />
           <Link href="/about-me" className="text-sm">
             More about Me
           </Link>
@@ -79,23 +82,23 @@ export const AboutHero = () => {
         transition={{ ease: easeInOut, delay: 1.7, duration: 0.5 }}
         className="flex flex-row gap-x-4 items-center text-xs"
       >
-        <div className="w-8 h-5 flex items-center justify-center">
+        <div className="w-7 h-7 flex items-center justify-center">
           <Image
             src={Avatar}
-            width={532}
-            height={532}
+            width={934}
+            height={1184}
             alt=" image"
             className="w-auto h-auto rounded-full hover:brightness-75 transition-all"
           />
         </div>
-        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-red-300 transition-all">
+        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-purple-300 transition-all">
           <FaGithub className="w-3 h-3" />
           <Link href="https://github.com/iampearlep" target="blank">
             Github
           </Link>
           <GoArrowUpRight className="w-4 h-4" />
         </div>
-        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-red-300 transition-all">
+        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-purple-300 transition-all">
           <FaLinkedin className="w-3 h-3" />
           <Link
             href="https://www.linkedin.com/in/princessenuma/"
@@ -105,7 +108,7 @@ export const AboutHero = () => {
           </Link>
           <GoArrowUpRight className="w-4 h-4" />
         </div>
-        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-red-300 transition-all">
+        <div className="flex flex-row gap-x-1 items-center justify-center hover:text-purple-300 transition-all">
           <MdAlternateEmail className="w-3 h-3" />
           <Link href="mailto:damilolaprincess4@gmail.com" target="blank">
             Email

@@ -54,7 +54,7 @@ export default function Projects() {
         />
       </motion.div> 
       <div>
-    <a href="/" className="flex flex-row justify-center items-center gap-x-1"> <IoIosArrowRoundBack />Go back </a>
+    <a href="/" className="flex flex-row justify-center items-center gap-x-1 hover:text-purple-300"> <IoIosArrowRoundBack />Go back </a>
    </div>
         </main>
     )
