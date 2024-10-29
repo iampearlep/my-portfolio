@@ -6,7 +6,7 @@ import { Link } from "./Link";
 export const ProjectLinks = () => {
   return (
     <section className="">
-      <motion.div initial={{ opacity: 0, scale:0.65 }} animate={{ opacity:1, scale:1}} transition={{ ease: "easeInOut",delay: 2.2, duration: 0.5}} className="mx-auto w-full">
+      <motion.div initial={{ opacity: 0, scale:0.5 }} animate={{ opacity:1, scale:1}} transition={{ ease: "easeInOut", delay: 0.9, duration: 0.45}} className="mx-auto w-full">
         <Link
           heading="Luxe"
           subheading="NEXTJS, TS, TAILWIND, SANITY, SUPABASE"
@@ -17,7 +17,7 @@ export const ProjectLinks = () => {
         <Link
           heading="Utopie"
           subheading="NEXTJS, TS, TAILWIND, FRAMER"
-          about= "A Landing page"
+          about= "A fintech Landing page"
           imgSrc="/images/img2.png"
           href="https://utopiepay.com/"
         />

@@ -14,7 +14,7 @@ export const AboutHero = () => {
         <motion.h1
           initial={{ y: 100, opacity: 0, scale: 0.5 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
-          transition={{ type: "spring", duration: 0.5 }}
+          transition={{ type: "spring", duration: 0.3 }}
           className="capitalize font-medium text-4xl text-purple-300"
         >
           Hello,
@@ -22,7 +22,7 @@ export const AboutHero = () => {
         <motion.p
           initial={{ y: 100, opacity: 0, scale: 0.5 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
-          transition={{ type: "spring", delay: 0.4, duration: 0.5 }}
+          transition={{ type: "spring", delay: 0.2, duration: 0.3 }}
           className="text-base py-4"
         >
           I&#39;m Princess, a
@@ -44,7 +44,7 @@ export const AboutHero = () => {
         <motion.div
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ ease: easeInOut, delay: 0.8, duration: 0.5 }}
+          transition={{ ease: easeInOut, delay: 0.3, duration: 0.3 }}
           className="flex flex-row justify-center items-center gap-x-5 w-4/12 hover:text-purple-300 transition-all"
         >
           <hr className="text-neutral-50 hover:text-purple-300 w-7/12" />
@@ -55,7 +55,7 @@ export const AboutHero = () => {
         <motion.div
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ ease: easeInOut, delay: 1.0, duration: 0.5 }}
+          transition={{ ease: easeInOut, delay: 0.4, duration: 0.3 }}
           className="flex flex-row justify-center items-center hover:text-purple-300 gap-x-5 w-4/12 transition-all"
         >
           <hr className="text-neutral-50 hover:text-purple-300 w-7/12" />
@@ -66,7 +66,7 @@ export const AboutHero = () => {
         <motion.div
           initial={{ x: -100, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ ease: easeInOut, delay: 1.2, duration: 0.5 }}
+          transition={{ ease: easeInOut, delay: 0.5, duration: 0.3 }}
           className="flex flex-row justify-center items-center gap-x-5 w-8/12 md:w-7/12 hover:text-purple-300 transition-all"
         >
           <hr className="text-neutral-50 hover:text-purple-300 w-5/12" />
@@ -79,7 +79,7 @@ export const AboutHero = () => {
       <motion.div
         initial={{ y: 100, opacity: 0, scale: 0.85 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
-        transition={{ ease: easeInOut, delay: 1.7, duration: 0.5 }}
+        transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
         className="flex flex-row gap-x-4 items-center text-xs"
       >
         <div className="w-7 h-7 flex items-center justify-center">
